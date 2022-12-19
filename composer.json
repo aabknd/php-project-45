@@ -11,5 +11,8 @@
             "email": "araslanovazat@yandex.ru"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+	    "bin/brain-games"
+    ]
 }
