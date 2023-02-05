@@ -1,8 +1,9 @@
+# Makefile
 install:
 	composer install
 
 brain-games:
-	./bin/brain-games.php
+	php bin/brain-games.php
 
 validate:
 	composer validate

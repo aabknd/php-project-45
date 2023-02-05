@@ -1,2 +1,10 @@
 #!/usr/bin/env php
-Welcome to the Brain Games!
+<?php
+
+use function src\Cli\greet;
+
+function main()
+{
+	return greet();
+}
+
