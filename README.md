@@ -4,5 +4,8 @@
 ### Code Climate maintainability badge:
 [![Maintainability](https://api.codeclimate.com/v1/badges/0dde9581c7db6f2cd703/maintainability)](https://codeclimate.com/github/aabknd/php-project-45/maintainability)
 
-### An example with installing dependencies and running a brain-even game with the player winning and losing:
-https://asciinema.org/a/QucPfEuGdVYe02GIi2ELx7vPW
+### An example with running a brain-even game with the player winning and losing:
+[![asciicast](https://asciinema.org/a/GMWzqNBctY9BhGsShdXWLIlDt.svg)](https://asciinema.org/a/GMWzqNBctY9BhGsShdXWLIlDt)
+
+### An example with running a brain-calc game with the player winning and losing:
+[![asciicast](https://asciinema.org/a/dh5NaWKXZ7u74S3fEKicikP9g.svg)](https://asciinema.org/a/dh5NaWKXZ7u74S3fEKicikP9g)
