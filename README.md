@@ -9,3 +9,6 @@
 
 ### An example with running a brain-calc game with the player winning and losing:
 [![asciicast](https://asciinema.org/a/dh5NaWKXZ7u74S3fEKicikP9g.svg)](https://asciinema.org/a/dh5NaWKXZ7u74S3fEKicikP9g)
+
+### An example with running a brain-gcd game with the player winning and losing:
+[![asciicast](https://asciinema.org/a/TdfaCTJq94qFhQrFfvGJeuMHq.svg)](https://asciinema.org/a/TdfaCTJq94qFhQrFfvGJeuMHq)
