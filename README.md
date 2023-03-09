@@ -12,3 +12,6 @@
 
 ### An example with running a brain-gcd game with the player winning and losing:
 [![asciicast](https://asciinema.org/a/TdfaCTJq94qFhQrFfvGJeuMHq.svg)](https://asciinema.org/a/TdfaCTJq94qFhQrFfvGJeuMHq)
+
+### An example with running a brain-progression game with the player winning and losing:
+[![asciicast](https://asciinema.org/a/FxDbca5xU3AZkM0WSGy1vhNZy.svg)](https://asciinema.org/a/FxDbca5xU3AZkM0WSGy1vhNZy)
