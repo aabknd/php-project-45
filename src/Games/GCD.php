@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\engineGame;
 
-function findGcd($num1, $num2)
+function findGcd(int $num1, int $num2)
 {
     while ($num2 != 0) {
         $remainder = $num1 % $num2;
