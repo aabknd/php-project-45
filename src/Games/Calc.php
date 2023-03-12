@@ -15,7 +15,7 @@ function runCalcGame()
         $num1 = rand(1, 100);
         $num2 = rand(1, 100);
         $sign = ["+", "-", "*"][rand(0, 2)];
-        $question = "$num1 $sign $num2"; 
+        $question = "$num1 $sign $num2";
         switch ($sign) {
             case '+':
                 $correctAnswer = $num1 + $num2;
@@ -32,4 +32,3 @@ function runCalcGame()
 
     engineGame($task, $result);
 }
-        

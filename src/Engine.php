@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function engineGame($task, $result) 
+function engineGame($task, $result)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
@@ -13,8 +13,8 @@ function engineGame($task, $result)
     line($task);
 
     foreach ($result as [$question, $correctAnswer]) {
-        line('Question: %s', $question); 
-        $inputAnswer = prompt('Your answer ');
+        line('Question: %s', $question);
+            $inputAnswer = prompt('Your answer ');
         if ($inputAnswer === $correctAnswer) {
             line('Correct!');
         } else {

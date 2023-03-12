@@ -15,7 +15,7 @@ function getProgression()
     $progressionArr = [];
     for ($i = 0; $i < $lenOfProgression; $i++) {
         $progressionArr[] += $startNumOfProgression;
-        $startNumOfProgression += $stepOfProgression; 
+        $startNumOfProgression += $stepOfProgression;
     }
     return $progressionArr;
 }
@@ -36,4 +36,4 @@ function runProgressionGame()
 
     engineGame($task, $result);
 }
-        
+   
