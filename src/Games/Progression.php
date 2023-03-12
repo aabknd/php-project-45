@@ -36,4 +36,4 @@ function runProgressionGame()
 
     engineGame($task, $result);
 }
-   
+

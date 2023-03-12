@@ -29,7 +29,5 @@ function runGcdGame()
         $correctAnswer = findGcd($num1, $num2);
         $result[] = [$question, (string)$correctAnswer];
     }
-
     engineGame($task, $result);
 }
-
