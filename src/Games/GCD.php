@@ -30,6 +30,6 @@ function runGcdGame()
         $result[] = [$question, (string)$correctAnswer];
     }
 
-    engineGame($task, $result);\
+    engineGame($task, $result);
 }
 
