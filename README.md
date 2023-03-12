@@ -15,3 +15,6 @@
 
 ### An example with running a brain-progression game with the player winning and losing:
 [![asciicast](https://asciinema.org/a/FxDbca5xU3AZkM0WSGy1vhNZy.svg)](https://asciinema.org/a/FxDbca5xU3AZkM0WSGy1vhNZy)
+
+### An example with running a brain-prime game with the player winning and losing:
+[![asciicast](https://asciinema.org/a/PQciSSY6y6mpNJ6QElQFlmIjL.svg)](https://asciinema.org/a/PQciSSY6y6mpNJ6QElQFlmIjL)
