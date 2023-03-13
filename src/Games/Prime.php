@@ -8,10 +8,6 @@ use function BrainGames\Engine\engineGame;
 
 function isPrime(int $num)
 {
-    if ($num < 2) {
-        return false;
-    }
-
     for ($i = 2; $i < sqrt($num); $i++) {
         if ($num % $i === 0) {
             return false;
@@ -27,7 +23,7 @@ function runPrimeGame()
     $result = [];
 
     for ($i = 0; $i < 3; $i++) {
-        $num = rand(0, 100);
+        $num = rand(2, 100);
         $correctAnswer = isPrime($num) ? 'yes' : 'no';
         $result[] = [$num, $correctAnswer];
     }
