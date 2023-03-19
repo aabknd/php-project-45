@@ -21,6 +21,7 @@ function calculate($num1, $num2, $sign)
         default:
             throw new Error("Unknown operator: {$sign}");
     }
+    return $correctAnswer;
 }
 
 function runCalcGame()
