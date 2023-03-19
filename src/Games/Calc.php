@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\runGame;
 
-function calculate($num1, $num2, $sign)
+function calculate(int $num1, int $num2, string $sign)
 {
     switch ($sign) {
         case '+':
