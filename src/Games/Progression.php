@@ -4,7 +4,7 @@ namespace BrainGames\Games\Progression;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\Engine\engineGame;
+use function BrainGames\Engine\runGame;
 
 function getProgression()
 {
@@ -24,8 +24,9 @@ function runProgressionGame()
 {
     $task = 'What number is missing in the progression?';
     $result = [];
+    $numberRounds = 3;
 
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < $numberRounds; $i++) {
         $progression = getProgression();
         $positionOfProgression = rand(0, count($progression) - 1);
         $correctAnswer = $progression[$positionOfProgression];
@@ -34,5 +35,5 @@ function runProgressionGame()
         $result[] = [$question, (string)$correctAnswer];
     }
 
-    engineGame($task, $result);
+    runGame($task, $result);
 }

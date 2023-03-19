@@ -4,31 +4,39 @@ namespace BrainGames\Games\Calc;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\Engine\engineGame;
+use function BrainGames\Engine\runGame;
+
+function calculate($num1, $num2, $sign)
+{
+    switch ($sign) {
+        case '+':
+            $correctAnswer = $num1 + $num2;
+            break;
+        case '-':
+            $correctAnswer = $num1 - $num2;
+            break;
+        case '*':
+            $correctAnswer = $num1 * $num2;
+            break;
+        default:
+            throw new Error("Unknown operator: {$sign}");
+    }
+}
 
 function runCalcGame()
 {
     $task = 'What is the result of the expression?';
     $result = [];
+    $numberRounds = 3;
 
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < $numberRounds; $i++) {
         $num1 = rand(1, 100);
         $num2 = rand(1, 100);
         $sign = ["+", "-", "*"][rand(0, 2)];
         $question = "$num1 $sign $num2";
-        switch ($sign) {
-            case '+':
-                $correctAnswer = $num1 + $num2;
-                break;
-            case '-':
-                $correctAnswer = $num1 - $num2;
-                break;
-            case '*':
-                $correctAnswer = $num1 * $num2;
-                break;
-        }
+        $correctAnswer = calculate($num1, $num2, $sign);
         $result[] = [$question, (string)$correctAnswer];
     }
 
-    engineGame($task, $result);
+    runGame($task, $result);
 }
