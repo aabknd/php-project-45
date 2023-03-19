@@ -11,7 +11,7 @@ function isPrime(int $num)
     if ($num <= 1) {
         return false;
     }
-    
+
     for ($i = 2; $i <= sqrt($num); $i++) {
         if ($num % $i === 0) {
             return false;
@@ -32,6 +32,6 @@ function runPrimeGame()
         $correctAnswer = isPrime($num) ? 'yes' : 'no';
         $result[] = [$num, $correctAnswer];
     }
-    
+
     runGame($task, $result);
 }
