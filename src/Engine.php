@@ -18,6 +18,7 @@ function runGame(string $task, array $result)
         if ($inputAnswer !== $correctAnswer) {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $inputAnswer, $correctAnswer);
             line("Let's try again, %s!", $name);
+            return;
         }
         line('Correct!');
     }
