@@ -32,6 +32,6 @@ function runPrimeGame()
         $correctAnswer = isPrime($num) ? 'yes' : 'no';
         $result[] = [$num, $correctAnswer];
     }
-
+    
     runGame($task, $result);
 }
