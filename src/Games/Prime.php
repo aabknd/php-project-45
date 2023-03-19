@@ -8,7 +8,11 @@ use function BrainGames\Engine\runGame;
 
 function isPrime(int $num)
 {
-    for ($i = 2; $i < sqrt($num); $i++) {
+    if ($num <= 1) {
+        return false;
+    }
+    
+    for ($i = 2; $i <= sqrt($num); $i++) {
         if ($num % $i === 0) {
             return false;
         }
