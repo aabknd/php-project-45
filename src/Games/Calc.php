@@ -19,7 +19,7 @@ function calculate(int $num1, int $num2, string $sign)
             $correctAnswer = $num1 * $num2;
             break;
         default:
-            throw new Error("Unknown operator: {$sign}");
+            return null;
     }
     return $correctAnswer;
 }
