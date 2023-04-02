@@ -6,6 +6,8 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\runGame;
 
+use Exception;
+
 use const BrainGames\Engine\NUMBER_OF_ROUNDS;
 
 const TASK = 'What is the result of the expression?';
