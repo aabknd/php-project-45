@@ -5,6 +5,8 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
+const NUMBER_OF_ROUNDS = 3;
+
 function runGame(string $task, array $result)
 {
     line('Welcome to the Brain Games!');

@@ -5,28 +5,28 @@ namespace BrainGames\Games\Progression;
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\runGame;
+use const BrainGames\Engine\NUMBER_OF_ROUNDS;
+
+const TASK = 'What number is missing in the progression?';
 
 function getProgression()
 {
-    $lenOfProgression = rand(5, 10);
-    //
-    $startNumOfProgression = rand(1, 100);
-    $stepOfProgression = rand(2, 5);
-    $progressionArr = [];
-    for ($i = 0; $i < $lenOfProgression; $i++) {
-        $progressionArr[] = $startNumOfProgression;
-        $startNumOfProgression += $stepOfProgression;
+    $len = rand(5, 10);
+    $startNum = rand(1, 100);
+    $step = rand(2, 5);
+    $progressionr = [];
+    for ($i = 0; $i < $len; $i++) {
+        $progression[] = $startNum;
+        $startNum += $step;
     }
-    return $progressionArr;
+    return $progression;
 }
 
 function runProgressionGame()
 {
-    $task = 'What number is missing in the progression?';
     $result = [];
-    $numberRounds = 3;
 
-    for ($i = 0; $i < $numberRounds; $i++) {
+    for ($i = 0; $i < NUMBER_OF_ROUNDS; $i++) {
         $progression = getProgression();
         $positionOfProgression = rand(0, count($progression) - 1);
         $correctAnswer = $progression[$positionOfProgression];
@@ -35,5 +35,5 @@ function runProgressionGame()
         $result[] = [$question, (string)$correctAnswer];
     }
 
-    runGame($task, $result);
+    runGame(TASK, $result);
 }

@@ -5,6 +5,9 @@ namespace BrainGames\Games\Prime;
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\runGame;
+use const BrainGames\Engine\NUMBER_OF_ROUNDS;
+
+const TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function isPrime(int $num)
 {
@@ -12,7 +15,7 @@ function isPrime(int $num)
         return false;
     }
 
-    for ($i = 2; $i <= sqrt($num); $i++) {
+    for ($i = 2; $i <= $num/2; $i++) {
         if ($num % $i === 0) {
             return false;
         }
@@ -23,15 +26,13 @@ function isPrime(int $num)
 
 function runPrimeGame()
 {
-    $task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $result = [];
-    $numberRounds = 3;
 
-    for ($i = 0; $i < $numberRounds; $i++) {
+    for ($i = 0; $i < NUMBER_OF_ROUNDS; $i++) {
         $num = rand(2, 100);
         $correctAnswer = isPrime($num) ? 'yes' : 'no';
         $result[] = [$num, $correctAnswer];
     }
 
-    runGame($task, $result);
+    runGame(TASK, $result);
 }
