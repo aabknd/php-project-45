@@ -5,6 +5,7 @@ namespace BrainGames\Games\GCD;
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\runGame;
+
 use const BrainGames\Engine\NUMBER_OF_ROUNDS;
 
 const TASK = 'Find the greatest common divisor of given numbers.';

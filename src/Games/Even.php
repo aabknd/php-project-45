@@ -5,6 +5,7 @@ namespace BrainGames\Games\Even;
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\runGame;
+
 use const BrainGames\Engine\NUMBER_OF_ROUNDS;
 
 const TASK = 'Answer "yes" if the number is even, otherwise answer "no".';
