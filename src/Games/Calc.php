@@ -8,7 +8,7 @@ use function BrainGames\Engine\runGame;
 
 use const BrainGames\Engine\NUMBER_OF_ROUNDS;
 
-const TASK = 'What is the result of the expression?'; 
+const TASK = 'What is the result of the expression?';
 
 function calculate(int $num1, int $num2, string $sign)
 {
