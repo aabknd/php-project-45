@@ -4,7 +4,7 @@ namespace BrainGames\Games\Even;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\Engine\runEngine
+use function BrainGames\Engine\runEngine;
 
 use const BrainGames\Engine\NUMBER_OF_ROUNDS;
 
