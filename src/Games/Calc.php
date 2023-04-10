@@ -6,7 +6,7 @@ use Exception;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\Engine\runGame;
+use function BrainGames\Engine\runEngine;
 
 use const BrainGames\Engine\NUMBER_OF_ROUNDS;
 
@@ -26,7 +26,7 @@ function calculate(int $num1, int $num2, string $sign)
     }
 }
 
-function runCalcGame()
+function runGame()
 {
     $result = [];
 
@@ -39,5 +39,5 @@ function runCalcGame()
         $result[] = [$question, (string)$correctAnswer];
     }
 
-    runGame(TASK, $result);
+    runEngine(TASK, $result);
 }

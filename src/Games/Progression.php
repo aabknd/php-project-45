@@ -4,7 +4,7 @@ namespace BrainGames\Games\Progression;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\Engine\runGame;
+use function BrainGames\Engine\runEngine;
 
 use const BrainGames\Engine\NUMBER_OF_ROUNDS;
 
@@ -17,13 +17,12 @@ function getProgression()
     $step = rand(2, 5);
     $progression = [];
     for ($i = 0; $i < $len; $i++) {
-        $progression[] = $startNum;
-        $startNum += $step;
+        $progression[] = $startNum + $step * $i;
     }
     return $progression;
 }
 
-function runProgressionGame()
+function runGame()
 {
     $result = [];
 
@@ -36,5 +35,5 @@ function runProgressionGame()
         $result[] = [$question, (string)$correctAnswer];
     }
 
-    runGame(TASK, $result);
+    runEngine(TASK, $result);
 }

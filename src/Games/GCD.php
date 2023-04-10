@@ -4,7 +4,7 @@ namespace BrainGames\Games\GCD;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\Engine\runGame;
+use function BrainGames\Engine\runEngine;
 
 use const BrainGames\Engine\NUMBER_OF_ROUNDS;
 
@@ -20,7 +20,7 @@ function findGcd(int $num1, int $num2)
     return $num1;
 }
 
-function runGcdGame()
+function runGame()
 {
     $result = [];
 
@@ -32,5 +32,5 @@ function runGcdGame()
         $correctAnswer = findGcd($num1, $num2);
         $result[] = [$question, (string)$correctAnswer];
     }
-    runGame(TASK, $result);
+    runEngine(TASK, $result);
 }
